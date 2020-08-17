@@ -1,0 +1,23 @@
+<h1>{{shoe.id == null ? 'Add' : 'Edit'}} Shoe - {{shoe.id}}</h1>
+<form>
+  <label for="brand">Brand</label>
+  <input type="text" class="form-control" id="brand" placeholder="Shoe Brand" [(ngModel)]="shoe.brand" name="brand">
+
+  <label for="name">Name</label>
+  <input type="text" class="form-control" id="name" placeholder="Shoe Name" [(ngModel)]="shoe.name" name="name">
+
+  <label for="price">Price</label>
+  <input type="text" class="form-control" id="price" placeholder="Price" [(ngModel)]="shoe.price" name="price">
+
+  <label for="size">Size</label>
+  <input type="text" class="form-control" id="size" placeholder="Size" [(ngModel)]="shoe.size" name="size">
+    
+    <br><br>
+    <input type="file" (change)="onFileChanged($event)">
+    <img [src]="imgURL" height="200" width="300" *ngIf="imgURL">
+
+  <br><br>
+  <button type="button" class="btn btn-success" (click)="saveShoe()">Save Shoe</button>
+
+</form>
+
