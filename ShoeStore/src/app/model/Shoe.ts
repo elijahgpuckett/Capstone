@@ -4,7 +4,7 @@ export class Shoe {
     brand: string;
     price: number;
     size: number;
-    picByte?: string;
-    retrievedImage?: string;
+    pic: string;
+    // retrievedImage?: string;
     isAdded: boolean;
 }

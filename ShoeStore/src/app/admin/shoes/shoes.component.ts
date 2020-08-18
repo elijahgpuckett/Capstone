@@ -57,11 +57,11 @@ export class ShoesComponent implements OnInit {
       shoewithRetrievedImageField.id = shoe.id;
       shoewithRetrievedImageField.name = shoe.name;
       //populate retrieved image field so that book image can be displayed
-      shoewithRetrievedImageField.retrievedImage = 'data:image/jpeg;base64,' + shoe.picByte;
+      // shoewithRetrievedImageField.retrievedImage = 'data:image/jpeg;base64,' + shoe.picByte;
       shoewithRetrievedImageField.brand = shoe.brand;
       shoewithRetrievedImageField.price = shoe.price;
       shoewithRetrievedImageField.size = shoe.size;
-      shoewithRetrievedImageField.picByte=shoe.picByte;
+      shoewithRetrievedImageField.pic= shoe.pic;
       this.shoes.push(shoewithRetrievedImageField);
     }
   }

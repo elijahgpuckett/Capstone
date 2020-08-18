@@ -22,9 +22,13 @@
             <td>Shoe Price</td>
             <td>{{shoe.price}}</td>
         </tr>
+        <tr>
+            <td>Shoe Pic</td>
+            <td>{{shoe.pic}}</td>
+        </tr>
     </table>
     <br>
-    <img src="{{shoe.retrievedImage}}" height="200" width="300">
+    <img src={{shoe.pic}} height="200" width="300">
     <br><br>
     <a class="btn btn-small btn-warning" (click)="editShoe()">edit</a>
     <a class="btn btn-small btn-danger" (click)="deleteShoe()">delete</a>

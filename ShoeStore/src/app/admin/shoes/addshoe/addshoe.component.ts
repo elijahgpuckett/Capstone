@@ -18,8 +18,8 @@ export class AddshoeComponent implements OnInit {
   shoeAddedEvent = new EventEmitter();
 
 
-  public selectedFile;
-  imgURL: any;
+  // public selectedFile;
+  // imgURL: any;
 
   constructor(private httpClientService: HttpClientService,
     private router: Router) { }
@@ -27,17 +27,17 @@ export class AddshoeComponent implements OnInit {
   ngOnInit(){
   }
 
-  public onFileChanged(event) {
-    console.log(event);
-    this.selectedFile = event.target.files[0];
+  // public onFileChanged(event) {
+  //   console.log(event);
+  //   this.selectedFile = event.target.files[0];
 
-    let reader = new FileReader();
-    reader.readAsDataURL(event.target.files[0]);
-    reader.onload = (event2) => {
-      this.imgURL = reader.result;
-    };
+  //   let reader = new FileReader();
+  //   reader.readAsDataURL(event.target.files[0]);
+  //   reader.onload = (event2) => {
+  //     this.imgURL = reader.result;
+  //   };
 
-  }
+  // }
 
 saveShoe() {
   this.httpClientService.addShoe(this.shoe)

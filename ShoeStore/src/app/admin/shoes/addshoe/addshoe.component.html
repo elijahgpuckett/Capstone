@@ -12,9 +12,9 @@
   <label for="size">Size</label>
   <input type="text" class="form-control" id="size" placeholder="Size" [(ngModel)]="shoe.size" name="size">
     
-    <br><br>
-    <input type="file" (change)="onFileChanged($event)">
-    <img [src]="imgURL" height="200" width="300" *ngIf="imgURL">
+  <label for="pic">Pic</label>
+  <input type="text" class="form-control" id="pic" placeholder="Pic" [(ngModel)]="shoe.pic" name="pic">
+    
 
   <br><br>
   <button type="button" class="btn btn-success" (click)="saveShoe()">Save Shoe</button>

@@ -24,8 +24,8 @@ public class Shoe {
 	@Column(name = "size")
 	private String size;
 
-	// @Column(name = "picByte", length = 1000)
-	// private byte[] picByte;
+	@Column(name = "pic")
+	private String pic;
 
 	public Long getId() {
 		return id;
@@ -67,14 +67,12 @@ public class Shoe {
 		this.size = size;
 	}
 
-	// public byte[] getPicByte() {
-	// 	return picByte;
-	// }
+	public String getPic() {
+		return pic;
+	}
 
-	// public void setPicByte(byte[] picByte) {
-	// 	this.picByte = picByte;
-	// }
-
-	
+	public void setPic(String pic) {
+		this.pic = pic;
+	}
 
 }

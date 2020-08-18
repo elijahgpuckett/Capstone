@@ -36,7 +36,5 @@ public class UserController {
 		User user = userRepository.getOne(id);
 		userRepository.deleteById(id); 
 		return user;
-	}
-
-
+	} 
 }

@@ -38,7 +38,7 @@ export class HttpClientService {
   }
 
   deleteShoe(id) {
-    return this.httpClient.delete<Shoe>('http://localhost:8080/shoes' + id);
+    return this.httpClient.delete<Shoe>('http://localhost:8080/shoes/' + id);
   }
 
   updateShoe(updatedShoe: Shoe) {
